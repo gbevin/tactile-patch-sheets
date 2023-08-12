@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Uwyn - Tactile Patch Sheets</title>
+	<link rel="stylesheet" type="text/css" href="style/content.css" />
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+
+	<div id="container">
+
+		<div id="header">
+			<div id="uwyn_logo"><a href="https://uwyn.com"><img src="images/uwyn_logo.png" height="60" alt="Uwyn logo" /></a></div>
+		</div>
+		
+		<div id="body_container">
+			
+			<div id="body">
+
+				<p class="subtitle">
+					Tactile Patch Sheets
+				</p>
+
+				<h1>Introduction</h1>
+
+				<p>
+					A while ago I had the privilege of collaborating with Tim Burgess from <a href="https://www.raisedbar.co.uk">Raised Bar</a>. He was working on transcribing patch sheets of the DFAM synthesizer into screen-readable web pages. This makes it possible for vision impaired people to dial in the synthesizer parameters. Having trouble with sight himself, Tim was struggling to get clear instructions from people without a synthesizer background.
+				</p>
+				<p>
+					I remembered Tim from accessibility work he had done for LinnStrument and volunteered to methodically describe the DFAM patch sheets to him over the phone. Over the course of a few days we got the patch sheet collection transcribed and tested.
+				</p>
+
+				<p>
+					<img src="images/mavis_foldable_kick_drum.jpg" style="width: 100%" alt="Tacitle Patch Sheet for MAVIS Synthesizer : Foldable Kick Drum" />
+				</p>
+
+				<h2>Tactile Approach</h2>
+
+				<p>
+					While going through the patch sheet transcription, I kept thinking that there had to be better ways to convey patch information without relying solely on vision. Being an avid 3D printer enthusiast, I asked Tim if I could create a series of tactile 3D printed prototypes and mail them to him for testing and feedback.
+				</p>
+
+				<p>
+					The tactile vocabulary explained here, was the result of this initiative. Hopefully this is an inspiring starting point for other people and can spark further research and innovation in this domain. Everything in this work is open-sourced under the <a href="https://opensource.org/license/bsd-3-clause/">New BSD license</a>.
+				</p>
+
+				<h2>Ready To Print</h2>
+
+				<p>
+					Alongside with the vocabulary, there's also a complete collection of factory DFAM and Mavis patch sheets, ready to 3D print. If you know sightless people that could benefit from these, and own a 3D printer, consider printing these patch sheets for them.
+				</p>
+				<p>
+					They're easy and quick to print, with negligible material cost.
+				</p>
+				<p>
+					<a href="#models">Find the details at the bottom of this page.</a>
+				</p>
+
+				<h1>Vocabulary</h1>
+
+				<h2>Base Sheet</h2>
+
+				<p>
+					The base sheet is placed over the front panel of the instrument with cutouts for knobs, buttons, switches, ports, and other front panel elements. The shape of the base sheet is designed to fit snugly around the front panel screws and edges, keeping the base sheet in place. The base sheet is 0.65mm thick and provides the foundation for the other elements of the tactile patch sheet.
+				</p>
+
+				<h2>Orientation Marker</h2>
+
+				<img src="images/orientation_identity_markers.jpg" style="width: 40%; float: right;" alt="Picture of top left corner with annotated orientation and identity markers" />
+
+				<p>
+					The top-left corner of the base sheet has a rounded rectangular cutout, big enough for a finger tip to rest in. The exact dimensions depend on what fits best with the shape and layout of the front panel, on the Mavis sheets these dimensions are roughly 10.9mm by 5.6mm with 2.5mm rounded corners, on the DFAM sheets these are roughly 16mm x 7mm with 3.1mm rounded corners. The rest of the patch sheet corners are straight 90 degree angles. This makes it easy to identify the intended orientation of the patch sheet by sliding a finger along the edges of the sheet until that unique cutout is felt.
+				</p>
+
+				<h2>Identity Markers</h2>
+
+				<p>
+					To the bottom and right sides of the orientation marker are identity markers, allowing identification of the patch sheet purely by touch. Identity markers are small 3mm wide and 1mm deep rectangular notches along the edges of the base sheet that are grouped 3mm apart.
+				</p>
+
+				<p>
+					By sliding a finger upwards from the orientation marker and then to the right, the first group of identity markers can be found, conveying the bank of the patch sheet. A bank contains a collection of patch sheets, for instance for a particular instrument.
+				</p>
+
+				<p>
+					By sliding a finger leftwards from the orientation marker and then down, the second group of identity markers can be found, conveying the program of the patch sheet. The program is a unique ordinal for a patch within a given bank.
+				</p>
+
+				<h2>Knob Pointer</h2>
+
+				<img src="images/knob_pointer.jpg" style="width: 65%; float: right; margin-left: 1em; margin-bottom: 1em;" alt="Picture of a few knob pointers" />
+
+				<p>
+					Knob pointers convey the position of a particular knob. A knob pointer is 0.75mm thick, 2.5mm wide and 4mm long and is placed adjacent to the circular cutout for the related knob, pointing outwards.
+				</p>
+
+				<p>
+					The extruded sides of the knob pointer are straight and have clean 90 degree edges, making it easy for fingers to find while sliding over the base sheet.
+				</p>
+
+				<p>
+					The knob pointer connects on one end to the knob cutout in the base sheet, getting as close to the knob itself as possible. The opposite outer end of the knob pointer in fully rounded.
+				</p>
+
+				<p>
+					By getting one edge as close to the knob as possible, there can be no tactile confusion about which knob the pointer belongs to.
+				</p>
+
+				<h2>Port Marker</h2>
+
+				<img src="images/port_maker_cable_tracer.jpg" style="width: 65%; float: right; margin-left: 1em; margin-bottom: 1em;" alt="Picture of a few port markers and cables tracers" />
+
+				<p>
+					Port markers identify ports between which cables need to be connected. Semi-modular synthesizers like DFAM and Mavis have patch bays for cables. The ports of these patch bays are accessible through cutouts in the base sheet. There can be a lot of tactile activity in the patch bay area, making it important for the port markers to be very recognizable.
+				</p>
+
+				<p>
+					Port markers are 0.75 thick, 1mm wide circles that get as close to the port cutout as possible. The circles are cut into 16 equally spaced segments, leaving every other segment blank, effectively created a dashed circle line. The extruded sides of the port marker are straight and have clean 90 degree edges, making it easy for fingers to find while sliding over the base sheet. The clean cut corners of the eight circular line dashes, set the port markers unmistakably apart from other tactile activity.
+				</p>
+
+				<p>
+					One of the eight segments previously mentioned as being blank, is actually filled in to indicate the starting direction of the cable tracer.
+				</p>
+
+				<h2>Cable Tracer</h2>
+
+				<p>
+					Cable tracers draw a path between two port markers to convey where a cable needs to be connected. A cable tracer is 0.75mm thick and 1mm wide and connected to port markers on either end. Cable tracers can only have straight lines and straight corners.
+				</p>
+
+				<p>
+					Cable tracers only change direction when there can be no confusion which direction needs to the followed, meaning that when two tracers cross, the path to follow is always straight. The extruded sides of the cable tracer are straight and have clean 90 degree edges, making it easy for fingers to find while sliding over the base sheet.
+				</p>
+
+				<p>
+					Cable tracers should always at least be 1mm apart to allow differentiation of parallel paths.
+				</p>
+
+				<p>
+					<img src="images/dfam_electro_thump.jpg" style="width: 100%" alt="Tacitle Patch Sheet for DFAM Synthesizer : Electro Thump" />
+				</p>
+
+				<h2>Split Sheets</h2>
+
+				<p>
+					Since the tactile patch sheets are designed for 3D printing, there's a size limit for them to fit onto 3D printer beds. If a tactile patch sheet needs to be split in multiple pieces, this can be done provided that the same orientation marker and identity markers are present on each top-left corner of the pieces.
+				</p>
+
+				<p>
+					The split sheets need to have uniquely identifiable shapes on the inside edges where they would join with the other pieces, effectively creating a simple puzzle that can be identified by touch and only assembled in one way. The nature of those inside shapes is dependent on the layout of the front panel. None of the tactile vocabulary on the base sheet can be interrupted or split across multiple pieces.
+				</p>
+
+				<a name="models"></a><h1>3D Printed Models</h1>
+
+				<p>
+					All the factory DFAM and MAVIS patch overlays have been converted to Tactile Patch Sheet 3D models.
+				</p>
+
+				<p>
+					The STL models are ready to print and can either be printed in a single color, or in two colors to better differentiate the pointers and markers for sighted people.
+				</p>
+
+				<p>
+					The printing instructions are simple:
+					<ul>
+						<li>First layer: 0.2mm</li>
+						<li>Other layers: 0.15mm</li>
+						<li>Optional color change at: 0.8mm (layer 5)</li>
+					</ul>
+				</p>
+
+				<p>
+					All the models can be <a href="https://www.printables.com/@gbevin/collections/792545">downloaded from Printables</a>.
+				</p>
+
+				<a name="models"></a><h1>Source Files</h1>
+
+				<p>
+					All source design files, design components, and models can be <a href="https://github.com/gbevin/tactile-patch-sheets">found on GitHub</a>.
+				</p>
+
+			</div>
+			
+		</div>
+
+	</div>
+	
+	<div id="copyright">
+		&copy;2023 Geert Bevin, <a href="https://uwyn.com">Uwyn LLC</a> - Distributed under the <a href="https://opensource.org/license/bsd-3-clause/">New BSD License</a>
+	</div>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
