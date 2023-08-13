@@ -1,6 +1,6 @@
 # Tactile Patch Sheets
 
-Tactile 3D printed overlays that allows synthesizer patches to be dialed in by touch.
+Tactile 3D printed overlays that allow synthesizer patches to be dialed in by touch.
 
 This work is freely distributed under the New BSD License.
 
